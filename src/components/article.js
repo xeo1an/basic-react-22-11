@@ -1,8 +1,16 @@
 import React from 'react'
 import CommentList from './comment-list'
+import PropTypes from 'prop-types'
 
 function Article(props) {
   const { article, isOpen, toggleOpen } = props
+
+  Article.propTypes = {
+    article: PropTypes.object.isRequired,
+    isOpen: PropTypes.bool.isRequired,
+    toggleOpen: PropTypes.func.isRequired
+  }
+
   return (
     <div>
       <h3>{article.title}</h3>
