@@ -7,7 +7,7 @@ function Comment({ comment }) {
   }
 
   return (
-    <div>
+    <div className="test__comment--body">
       {comment.text} <b>by {comment.user}</b>
     </div>
   )

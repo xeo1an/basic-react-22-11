@@ -12,7 +12,7 @@ function Article(props) {
   }
 
   return (
-    <div>
+    <div className="test__article--element">
       <h3>{article.title}</h3>
       <button onClick={toggleOpen} className="test__article--btn">
         {isOpen ? 'close' : 'open'}
